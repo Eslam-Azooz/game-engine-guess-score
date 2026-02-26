@@ -44,13 +44,13 @@ namespace game_engine_guess_score
                 }
                 trynumber--;
             }
-            if (score != 0)
+            if (score >= 0)
             {
                 Console.WriteLine($"you win with score {score}");
             }
-            else
+            else 
             {
-                Console.WriteLine($"you lose with score {score}");
+                Console.WriteLine($"you lose with score {0}");
             }
         }
 
