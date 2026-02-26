@@ -6,7 +6,7 @@
         {
             round r = new round();
             r.roundstart();
-            r.replay();
+        //    r.replay();
             Console.WriteLine("Hello, World!");
         }
     }

@@ -24,6 +24,7 @@ namespace game_engine_guess_score
 
 
             whileloop();
+            replay();
         }
 
         public void whileloop()
@@ -66,7 +67,7 @@ namespace game_engine_guess_score
             else
             {
                 Console.WriteLine($"thank you for playing!");
-                return;
+               
             }
 
 
