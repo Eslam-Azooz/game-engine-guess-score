@@ -22,6 +22,7 @@ namespace game_engine_guess_score
             Console.WriteLine($"enter number of try  ");
             trynumber= int .Parse(Console.ReadLine());
 
+
             whileloop();
         }
 
@@ -53,24 +54,24 @@ namespace game_engine_guess_score
             }
         }
 
-        //public void replay()
-        //{
-        //    Console.WriteLine($"do you want to play again? (y/n) ");
-        //    char ch= char.Parse(Console.ReadLine());    
-        //    if (ch == 'y')
-        //    {
-        //        roundnumber++;
-        //        roundstart();
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine($"thank you for playing!");
-        //        return;
-        //    }
+        public void replay()
+        {
+            Console.WriteLine($"do you want to play again? (y/n) ");
+            char ch = char.Parse(Console.ReadLine());
+            if (ch == 'y')
+            {
+                roundnumber++;
+                roundstart();
+            }
+            else
+            {
+                Console.WriteLine($"thank you for playing!");
+                return;
+            }
 
 
 
-        //} 
+        }
 
 
 
