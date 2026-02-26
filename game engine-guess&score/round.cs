@@ -48,7 +48,7 @@ namespace game_engine_guess_score
             {
                 Console.WriteLine($"you win with score {score}");
             }
-            
+            else 
             {
                 Console.WriteLine($"you lose with score {0}");
             }
