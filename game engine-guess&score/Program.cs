@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-        //    round r = new round();
-        //    r.roundstart();
-        //    r.replay();
+            round r = new round();
+            r.roundstart();
+            //    r.replay();
             Console.WriteLine("Hello, World!");
         }
     }
