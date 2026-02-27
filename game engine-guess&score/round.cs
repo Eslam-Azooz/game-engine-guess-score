@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace game_engine_guess_score
 {
-    
     public  class round
     {
      
         public int trynumber { get; set; }
         public int score = 90;
         public static int roundnumber = 1;
-        
+    
 
         public void roundstart()
         {
@@ -25,7 +24,7 @@ namespace game_engine_guess_score
 
 
             loop.whileloop(trynumber,score);
-           replay.replay1(ref roundnumber);
+            replay();
         }
 
         //public void whileloop()
@@ -37,7 +36,7 @@ namespace game_engine_guess_score
         //    {
         //        int number;
         //        Console.WriteLine($"enter number between 1 and 5  ");
-        
+
         //        number = int.Parse(Console.ReadLine());
 
         //        if (number != num)
@@ -56,24 +55,24 @@ namespace game_engine_guess_score
         //    }
         //}
 
-        //public void replay()
-        //{
-        //    Console.WriteLine($"do you want to play again? (y/n) ");
-        //    char ch = char.Parse(Console.ReadLine());
-        //    if (ch == 'y')
-        //    {
-        //        roundnumber++;
-        //        roundstart();
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine($"thank you for playing!");
+        public void replay()
+        {
+            Console.WriteLine($"do you want to play again? (y/n) ");
+            char ch = char.Parse(Console.ReadLine());
+            if (ch == 'y')
+            {
+                roundnumber++;
+                roundstart();
+            }
+            else
+            {
+                Console.WriteLine($"thank you for playing!");
                
-        //    }
+            }
 
 
 
-        //}
+        }
 
 
 
