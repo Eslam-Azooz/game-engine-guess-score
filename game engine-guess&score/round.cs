@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace game_engine_guess_score
 {
-    internal class round
+    public  class round
     {
      
         public int trynumber { get; set; }
@@ -23,7 +23,7 @@ namespace game_engine_guess_score
             trynumber= int .Parse(Console.ReadLine());
 
 
-            whileloop();
+            loop.whileloop(trynumber,score);
             replay();
         }
 
